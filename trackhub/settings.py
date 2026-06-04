@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'trackhub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres1',          # Имя базы данных
+        'USER': 'postgres',                 # Пользователь PostgreSQL
+        'PASSWORD': '89101379062k',             # Пароль от PostgreSQL
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
